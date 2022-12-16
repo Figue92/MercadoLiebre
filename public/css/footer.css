@@ -1,0 +1,25 @@
+footer {
+    color:  #666;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+footer article{
+    margin-bottom: 25px;
+}
+footer article p {
+    font-size: var(--parrafos);
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer article h4 {
+    font-size: 14px;
+}
+
+footer article i {
+    color: var(--color-Celeste);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
