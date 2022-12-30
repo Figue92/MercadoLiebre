@@ -1,8 +1,5 @@
-header{
+.home__header{
     background-color: var(--color-amarillo);
-    font-size: var(--parrafos);
-    padding-bottom: 10px;
-    padding-top: 30px;
     
 }
  
@@ -19,11 +16,15 @@ header{
     margin: 10px auto 0 auto;
     }
 .header__logo {
-    width: 130px;
-    margin-left: 25;
+   background-color: var(--color-amarillo);
+   margin: 20px;
+}
+.header__menu {
+    display: none;
 }
 
 .header__busqueda {
-    margin-left: 25px;    
+   font-family: var(--font-roboto), 'Sans-Serif';  
+   font-size: 12px;
 }
 
