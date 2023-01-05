@@ -1,5 +1,5 @@
-footer {
-    color:  #666;
+.home__footer {
+    color: var(--color-GrisOscuro);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px;
