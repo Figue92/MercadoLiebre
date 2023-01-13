@@ -50,7 +50,8 @@ flex-wrap: wrap;
 }
 .home__header__busqueda--button{
     font-family: var(--font-roboto), sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    border-radius: 20%;
     top: 0;
     right: 0;
     position: absolute;
