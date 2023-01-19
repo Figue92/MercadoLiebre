@@ -1,0 +1,20 @@
+button {
+    padding: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form-button button {
+    background-color: var(--colorCeleste);
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+button a {
+    color: #FFF;
+    text-decoration: none;
+}
+

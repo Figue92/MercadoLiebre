@@ -9,11 +9,10 @@ a{
     text-decoration: none;
 }
 body{
-   /*  font-family: var(--font-roboto),sans-serif;
-    font-size: 12px;
-    padding: 0px 3px;
-     */
-     background-color: var(--color-GrisClaro);
+    font-family: var(--font-roboto),sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: var(--color-GrisClaro);
 }
 li{
     list-style: none;
@@ -21,6 +20,15 @@ li{
 p {
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: center; 
+    
+}
+ul {
+    list-style: none;
+    color: var(--color-Celeste);
+}
+button {
+    padding: 8px;
+    cursor: pointer;
 }
 

@@ -1,18 +1,21 @@
-.home__header {
-    background-color: var(--color-Amarillo);
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .home__main {
-   background-color: var(--color-GrisClaro);
-   width: 90%;
     display: inline;
+    background-color: var(--color-GrisClaro);
+    width: 90%;
    
+    
 }
 .home__main__section--banner{
+    
     margin: 0px 0px 20px 0px;
 }
+.home__header--compra{
+    width: 100%;
+    font-size: 17px;
+    
+}
+
 .home__main__section--titulos{
     font-family: var( --font-roboto);
     font-size: 24px;
@@ -21,36 +24,53 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.home__main__section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.home__main__section:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
 .home__main__section__article{
 
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
-    margin: 15px;
-    justify-content: space-between;
-   
+    margin: 10px;
+    justify-content: center;
 }
 .home__main__section__imgProduct{
         width: 100%;
-        padding: 1px 1x 1px;
+        
     }
 .home__main__section__article__info{
-    display: none;
-    background-color: white;
+   
+    /* display: flex;
     border-top: 1px solid var(--color-GrisClaro);
-    padding: 15px;
     flex-wrap: wrap;
     position: relative;
     align-items: center;
-    width: 100%;
-
+  */
+  background-color: white;
+  border-top: 1px solid var(--color-GrisClaro);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+ 
     
 }
+.home__main__section__article__info:hover {
+    height: 50px;
+margin-top: 30px;
+}
 .home__main__section__article i{
-   /*  border: 1px solid var(--color-Verde);
-    border-radius: 50%;
-    color: var(--color-Verde);
-    padding: 10px;  */
+   
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -59,34 +79,44 @@
     border: 1px solid var(--color-Verde);
     background-color: #fff;
     border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    color: var(--color-Verde);   
+    position: relative;
+    right: -125px;
+    top: 23px;
+    color: var(--color-Verde); 
+    transition:  1s;  
+}
+.home__main__section__article i:hover {
+    transform: rotate(-90deg);
 }
 
 .home__main__section__article__precio{
     width: 30%;
   font-size: 18px;
-    
+  padding-right: 10px;
 }
 .home__main__section__article__descuento{
     width: 70%;
    font-size: 16px;
     color: var(--color-Verde);
+    
 }
 .home__main__section__article__nombre{
-    width: 100%;
+   
     font-size: 16px;
-    color: var(--colorGris-Oscuro);
-    font-weight: 300;
-    padding: 20px 0 0;
-    text-align: left;
+    color: var(--color-GrisOscuro);
+    margin-top: 30px;
+    height: 0;
+    width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+}
+.home__main__section__article__info:hover .home__main__section__article__nombre{
+    height: 30px;
 }
 @media (min-width: 361px){
   
     .home__main__section__article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       justify-content: space-between;
         display: inline-block;
         width: 40%;
         
@@ -99,9 +129,9 @@
         flex-wrap: wrap;
       }
       .home__header__nav--menuVenta{
-        width: 40%;
+        width: 100%;
         display: flex;
-        gap: 30px;
+        gap: 60px;
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 0 60px 0 60px;
@@ -122,12 +152,7 @@
 
 @media (min-width: 769px){
     .home__main__section__article{
-      display: inline-block;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 22%;
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        
+     width: 21%;
     }
     .home__main__section__article__info{
         position: relative;
@@ -147,14 +172,11 @@
         border:1px solid var(--color-Verde);
         background-color: #FFF;
         border-radius: 50%;
-        position: absolute;
-        right: 20px;
-        top: -15px;
+        position: relative;
+        right: -71px;
+        top: 23px;
+        color: var(--color-Verde);
 
     } 
-    .home__header__nav{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
+    
 }

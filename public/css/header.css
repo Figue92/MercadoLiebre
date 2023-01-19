@@ -1,4 +1,9 @@
-
+.home__header {
+    background-color: var(--color-Amarillo);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
  .header__hamburger {
     justify-content: center;
     flex-wrap:wrap;
@@ -17,43 +22,42 @@
     
     }
 .header__logo {
-   background-color: var(--color-Amarillo);
-   margin: 10px;
-    width: 40%;
+   
+   width: 45%;
 }
 .header__logo img {
     width: 90%;
 }
 
 .header__busqueda{
+   
     width: 50%;
     position: relative;
     padding: 0px;
+    
 }
 .header__busqueda input{
     width: 100%;
-    padding: 8px;
+    padding: 8px 32px 8px 8px;
+    background-color: #ffff;
+    color: var(--color-GrisOscuro);
     border: none;
     border-radius: 8px;
+    border-radius: 20px;
    
-}
-.home__header--busqueda{
-position: absolute;
-top: 0;
-right: 0;
-border: none;
-background-color: #FFF;
-border-left: 1px solid;
-width: 48%;
-display: flex;
-flex-wrap: wrap;
 }
 .home__header__busqueda--button{
     font-family: var(--font-roboto), sans-serif;
     font-size: 20px;
-    top: 0;
-    right: 0;
+    top: -8px;
+    right: 4px;
+    color: var(--color-GrisOscuro);
     position: absolute;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid var(--color-GrisOscuro);
+    padding: 0 4px;
+    
 }
 .home__header--titulo{
     font-family: var(--font-roboto);
@@ -81,5 +85,27 @@ flex-wrap: wrap;
     }
     .home__header--titulo{
         width: 30%;
+        display: flex;
+        align-items: center;
     }
 }
+    @media (min-width: 768px) {
+    
+        
+        .home__header__nav{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .home__header__nav--menuVenta {
+            display: flex;
+            gap: 10px;
+        }
+        .header__nav--menuLogin{
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+
+
